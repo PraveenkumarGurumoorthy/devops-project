@@ -4,18 +4,18 @@
   "metadata": {
     "name": "adz4wdw",
     "namespace": "default",
-    "uid": "9001ba0a-9c8d-450e-bf8f-932c9dc2b4a9",
-    "resourceVersion": "1795540746438011",
-    "generation": 2,
-    "creationTimestamp": "2026-11-24T17:16:12Z",
+    "uid": "758bcbd9-9210-45b7-8d30-df6e5e9ac2f2",
+    "resourceVersion": "1795614397081013",
+    "generation": 7,
+    "creationTimestamp": "2026-11-25T13:31:20Z",
     "labels": {
-      "grafana.app/deprecatedInternalID": "4081893452341248"
+      "grafana.app/deprecatedInternalID": "4387691014103040"
     },
     "annotations": {
-      "grafana.app/createdBy": "user:cg5a7fd1mb6kgd",
+      "grafana.app/createdBy": "user:ag5db5teeew3kf",
       "grafana.app/saved-from-ui": "Grafana v13.3.1 (da3aa3ff57)",
-      "grafana.app/updatedBy": "user:cg5a7fd1mb6kgd",
-      "grafana.app/updatedTimestamp": "2026-11-24T17:19:06Z"
+      "grafana.app/updatedBy": "user:ag5db5teeew3kf",
+      "grafana.app/updatedTimestamp": "2026-11-25T13:46:37Z"
     }
   },
   "spec": {
@@ -66,9 +66,10 @@
                       },
                       "spec": {
                         "editorMode": "code",
-                        "expr": "sum(rate(app_requests_total[1m])) by (endpoint)",
-                        "instant": true,
-                        "legendFormat": "__auto",
+                        "expr": "sum(rate(app_requests_total[1m]))",
+                        "instant": false,
+                        "interval": "",
+                        "legendFormat": "requests",
                         "range": true
                       }
                     },
